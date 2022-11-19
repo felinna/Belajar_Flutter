@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:task_management_app/app/utils/style/AppColors.dart';
 import 'package:task_management_app/app/utils/widget/header.dart';
+import 'package:task_management_app/app/utils/widget/myfriends.dart';
 import 'package:task_management_app/app/utils/widget/sideBar.dart';
 
 import '../../../utils/widget/upcomingTask.dart';
@@ -109,7 +110,7 @@ final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
                             ),
                           ),
                           const SizedBox(
-                            height: 20
+                            height: 10,
                           ),
                           //my task
                           SizedBox(
@@ -394,45 +395,15 @@ final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
                         ],
                       ),
                     ),
-                    Expanded(
+                    !context.isPhone ? Expanded(
                       child: Row(                 
                         children: [
-                          const UpcomingTask(), 
-                          Expanded(
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    const Text(
-                                      'My Friend', 
-                                      style: TextStyle(
-                                        color: AppColors.primaryText, 
-                                      fontSize: 30,
-                                      ),
-                                    ),
-                                    Text(
-                                      'More', 
-                                      style: TextStyle(
-                                        color: AppColors.primaryText, 
-                                      fontSize: 30,
-                                      ),
-                                    ),
-                                    Icon(
-                                      Icons.arrow_forward,
-                                      color: AppColors.primaryText,
-                                    ),
-                          
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 20,
-                                ),
-                              ],
-                            ),
-                          ), 
+                          UpcomingTask(), 
+                          Myfriends(), 
                         ],
                       ),
-                    ),
+                    )
+                    : UpcomingTask(),
                   ]),
                 ),
               ), 
