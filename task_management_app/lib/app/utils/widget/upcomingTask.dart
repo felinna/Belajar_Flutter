@@ -64,6 +64,16 @@ class UpcomingTask extends StatelessWidget {
                                   NetworkImage('https://images.unsplash.com/photo-1579591919791-0e3737ae3808?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM4fHxodW1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
                               ),
                             ),
+
+                              ClipRRect(
+                              borderRadius: BorderRadius.circular(25),
+                              child: const CircleAvatar(
+                              backgroundColor: Colors.amber,
+                              radius: 20, 
+                              foregroundImage: 
+                                  NetworkImage('https://images.unsplash.com/photo-1579591919791-0e3737ae3808?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM4fHxodW1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
+                              ),
+                            ),
                             const Spacer(),
                             Container(
                                 height: 25,
@@ -123,6 +133,16 @@ class UpcomingTask extends StatelessWidget {
                               ),
                                             
                             ClipRRect(
+                              borderRadius: BorderRadius.circular(25),
+                              child: const CircleAvatar(
+                              backgroundColor: Colors.amber,
+                              radius: 20, 
+                              foregroundImage: 
+                                  NetworkImage('https://images.unsplash.com/photo-1579591919791-0e3737ae3808?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTM4fHxodW1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
+                              ),
+                            ),
+
+                              ClipRRect(
                               borderRadius: BorderRadius.circular(25),
                               child: const CircleAvatar(
                               backgroundColor: Colors.amber,
